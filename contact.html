@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Swagat Bhoir</title>
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <span class="dot"></span>
+      <a href="index.html"><strong>Swagat Bhoir</strong> <span class="title"></a>
+    </div>
+    <nav>
+      <a href="resume.html">Resume</a>
+      <span class="divider">|</span>
+      <a href="projects.html">Projects</a>
+      <span class="divider">|</span>
+      <a class="active" href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="contact-left">
+      <h1>Contact</h1>
+      <p>Looking forward to hearing from you</p>
+
+      <h3>Phone</h3>
+      <p>8408982770</p>
+
+      <h3>Email</h3>
+      <p>223swagat2006@sjcem.edu.in</p>
+    </div>
+
+    <div class="contact-form">
+      <form>
+        <div class="row">
+          <div class="form-group">
+            <label for="fname">First Name *</label>
+            <input type="text" id="fname" name="fname" required>
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name *</label>
+            <input type="text" id="lname" name="lname" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="5"></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </main>
+</body>
