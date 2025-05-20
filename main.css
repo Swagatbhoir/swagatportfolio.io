@@ -1,0 +1,415 @@
+/* -----------------------------------------------
+   RESET & BASE STYLES
+-------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  color: #111;
+  padding: 30px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* -----------------------------------------------
+   HEADER & NAVIGATION
+-------------------------------------------------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+.logo .dot {
+  width: 12px;
+  height: 12px;
+  background: goldenrod;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.logo .title {
+  color: gray;
+  font-size: 14px;
+  margin-left: 8px;
+}
+nav a {
+  text-decoration: none;
+  color: #111;
+  margin: 0 10px;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+nav a:hover,
+nav a:focus {
+  color: goldenrod;
+  text-decoration: underline;
+}
+nav a.active {
+  color: goldenrod;
+}
+.divider {
+  color: #999;
+}
+
+/* -----------------------------------------------
+   HOME PAGE STYLES (from style.css)
+-------------------------------------------------- */
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+.image-container img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.intro h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.intro h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.intro p {
+  font-size: 16px;
+  color: #333;
+  max-width: 400px;
+  margin-bottom: 30px;
+}
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+.btn {
+  padding: 20px 30px;
+  border-radius: 50%;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  line-height: 80px;
+  vertical-align: middle;
+  font-size: 18px;
+}
+.resume {
+  background-color: #f1b100;
+}
+.projects {
+  background-color: #ff4433;
+}
+.contact {
+  background-color: #7de0e0;
+}
+
+/* -----------------------------------------------
+   RESUME PAGE STYLES (Modern & Responsive)
+-------------------------------------------------- */
+
+.resume-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 40px;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.resume-sidebar {
+  background-color: #fafafa;
+  padding: 20px;
+  border-radius: 12px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.resume-sidebar h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: goldenrod;
+}
+
+.resume-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.resume-section {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.resume-section h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+  color: #222;
+}
+
+.resume-section .item {
+  margin-bottom: 15px;
+}
+
+.resume-section .item h4 {
+  font-size: 17px;
+  font-weight: bold;
+  color: #444;
+}
+
+.resume-section .date {
+  font-size: 14px;
+  color: #888;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.skills ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills ul li {
+  background-color: #e3f2fd;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #1976d2;
+}
+
+/* Section color backgrounds */
+.job {
+  background-color: #f9f9f9;
+}
+
+.education {
+  background-color: #fffbe6;
+}
+
+.skills {
+  background-color: #f0faff;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .resume-grid {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .resume-sidebar {
+    text-align: center;
+  }
+
+  .resume-content {
+    gap: 20px;
+  }
+
+  .skills ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+/* -----------------------------------------------
+   CONTACT PAGE STYLES (from contact.css)
+-------------------------------------------------- */
+.contact-left {
+  max-width: 300px;
+}
+.contact-left h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.contact-left p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.contact-left h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.contact-form {
+  flex: 1;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.row {
+  display: flex;
+  gap: 20px;
+}
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+input,
+textarea {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #444;
+  border-radius: 2px;
+  background-color: white;
+  resize: vertical;
+}
+textarea {
+  height: 100px;
+}
+button {
+  width: 200px;
+  padding: 15px;
+  background-color: #f1b100;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  margin-top: 10px;
+}
+button:hover {
+  background-color: #e0a400;
+}
+
+/* -----------------------------------------------
+   RESPONSIVE DESIGN (from responsive.css)
+-------------------------------------------------- */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  nav {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  main {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .project-section {
+    flex-direction: column;
+  }
+
+  .image-container img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .btn {
+    width: auto;
+    height: auto;
+    padding: 12px 24px;
+    border-radius: 8px;
+    line-height: normal;
+  }
+
+  .resume-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  form .row {
+    flex-direction: column;
+  }
+
+  .left {
+    flex: 1;
+  }
+
+  nav a {
+    margin: 0 5px;
+  }
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.contact-left,
+.contact-form {
+  flex: 1 1 45%;
+  box-sizing: border-box;
+}
+
+/* Make form and content stack on small screens */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .contact-left,
+  .contact-form {
+    flex: 1 1 100%;
+  }
+
+  iframe {
+    width: 100% !important;
+    height: auto;
+  }
+}
+
+/* Make iframe responsive */
+.map-container iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}

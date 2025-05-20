@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Swagat Bhoir</title>
-  <link rel="stylesheet" href="contact.css" />
+  <link rel="stylesheet" href="main.css">
 </head>
+<style>
+  footer {
+    background-color: #f2f2f2;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 40px;
+  }
+
+  .footer-content a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .footer-content a:hover {
+    text-decoration: underline;
+  }
+
+  .footer-bottom {
+    margin-top: 10px;
+    color: #777;
+  }
+</style>
+
 <body>
   <header>
     <div class="logo">
@@ -13,6 +39,8 @@
       <a href="index.html"><strong>Swagat Bhoir</strong> <span class="title"></a>
     </div>
     <nav>
+       <a href="introduction.html">Introduction</a>
+        <span class="divider">|</span>
       <a href="resume.html">Resume</a>
       <span class="divider">|</span>
       <a href="projects.html">Projects</a>
@@ -65,5 +93,26 @@
         <button type="submit">Submit</button>
       </form>
     </div>
+    <!-- Google Map -->
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.6556683017884!2d72.74275297467639!3d19.5391700872699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be701b1e06814b7%3A0x472d0da6f9e186bd!2sDongare%2C%20Maharashtra%20401102!5e1!3m2!1sen!2sin!4v1747731827980!5m2!1sen!2sin"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
   </main>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>Connect with me:</p>
+      <a href="https://www.instagram.com/swagat_bhoir__/profilecard/?igsh=ODVrb2ppemo3aXQ3"
+        target="_blank">Instagram</a> |
+      <a href="https://www.linkedin.com/in/swagat-bhoir?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+        target="_blank">LinkedIn</a> |
+      <a href="https://wa.me/qr/NYJNGFZ2FNV5E1">Whatapp</a>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Swagat Bhoir. All rights reserved.</p>
+    </div>
+  </footer>
 </body>

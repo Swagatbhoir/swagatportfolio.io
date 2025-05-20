@@ -1,0 +1,51 @@
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  main {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .project-section {
+    flex-direction: column;
+  }
+
+  .image-container img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .btn {
+    width: auto;
+    height: auto;
+    padding: 12px 24px;
+    border-radius: 8px;
+    line-height: normal;
+  }
+
+  .resume-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  form .row {
+    flex-direction: column;
+  }
+}

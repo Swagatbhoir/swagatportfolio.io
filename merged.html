@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Swagat Bhoir Portfolio</title>
+  <link rel="stylesheet" href="main.css">
+  <style>
+    .section { display: none; }
+    .section.active { display: block; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <span class="dot"></span>
+      <strong>Swagat Bhoir</strong> <span class="title"></span>
+    </div>
+    <nav>
+      <a href="#" onclick="showSection('home')">Home</a>
+      <span class="divider">|</span>
+      <a href="#" onclick="showSection('resume')">Resume</a>
+      <span class="divider">|</span>
+      <a href="#" onclick="showSection('projects')">Projects</a>
+      <span class="divider">|</span>
+      <a href="#" onclick="showSection('contact')">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <main id="home" class="section active">
+    <div class="image-container">
+      <img src="WhatsApp Image 2025-05-19 at 09.42.40_9fd23a26.jpg" alt="Nicol Rider" />
+    </div>
+    <div class="intro">
+      <h1>Hello</h1>
+      <h2>A Bit About Me</h2>
+      <p>My career objective is to leverage my technical skills and knowledge gained through my learning program
+to Contribute to Innovative Projects in The Field of Computer Engineering.</p>
+      <div class="buttons">
+        <a class="btn resume" href="#" onclick="showSection('resume')">Resume</a>
+        <a class="btn projects" href="#" onclick="showSection('projects')">Projects</a>
+        <a class="btn contact" href="#" onclick="showSection('contact')">Contact</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Resume Section -->
+  <main id="resume" class="section">
+    <h1>Resume</h1>
+    <div class="resume-content">
+      <div class="left">
+        <h2>Education</h2>
+      </div>
+      <div class="right">
+        <div class="job">
+          <span class="date">2024 - Present</span>
+          <h3>B.Tech</h3>
+          <p>Persuing The B. tech degree in Feild of Computer Engineering</p>
+        </div>
+        <div class="job">
+          <span class="date">2021 - 2024</span>
+          <h3>Diploma</h3>
+          <p>Completed The Deploma with 83.33% in Feild of Computer Science.</p>
+        </div>
+        <div class="job">
+          <span class="date">2021</span>
+          <h3>SSC</h3>
+          <p>Percentage: 80%<br>L. J. N. V. SCHOOL AAGRWADI</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="resume-content">
+      <div class="left">
+        <h2>Skills</h2>
+      </div>
+      <div class="right">
+        <div class="job">
+          <h3>C, C++</h3>
+        </div>
+        <div class="job">
+          <h3>JAVA</h3>
+        </div>
+        <div class="job">
+          <h3>HTML/CSS</h3>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Projects Section -->
+  <main id="projects" class="section">
+    <h1>Projects</h1>
+    <div class="project-section">
+      <div class="project-info">
+        <h2>STUDENT ROOM SHARING APP</h2>
+        <p>
+          Devloped an app for student who can't afford a room individualy.
+          basically our app provide an platform for student so they can easily find there PG partner.
+          app was developed on android and firebase database is used.
+        </p>
+      </div>
+      <div class="project-image">
+        <img src="app_screenshot.jpg" alt="Project Image">
+      </div>
+    </div>
+  </main>
+
+  <!-- Contact Section -->
+  <main id="contact" class="section">
+    <div class="contact-left">
+      <h1>Contact</h1>
+      <p>Looking forward to hearing from you</p>
+
+      <h3>Phone</h3>
+      <p>8408982770</p>
+
+      <h3>Email</h3>
+      <p>223swagat2006@sjcem.edu.in</p>
+    </div>
+
+    <div class="contact-form">
+      <form>
+        <div class="row">
+          <div class="form-group">
+            <label for="fname">First Name *</label>
+            <input type="text" id="fname" name="fname" required>
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name *</label>
+            <input type="text" id="lname" name="lname" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="5"></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </main>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.section').forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
